@@ -1,0 +1,26 @@
+package Level1.직사각형별찍기;
+
+import java.util.Scanner;
+
+class Solution {
+    public void solution(int a, int b){
+        for(int i = 0; i < b; i++){
+            for(int j=0; j < a; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println(a + b);
+        s.solution(a, b);
+
+
+    }
+}
